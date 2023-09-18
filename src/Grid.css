@@ -1,0 +1,30 @@
+.grid-container {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(var(--numColumns), 1fr);
+    grid-auto-rows: 1fr;
+    gap: 5px;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    background-color: blue;
+    height: 50px;
+  }
+
+  .box-label {
+    color: white;
+  }
+  
